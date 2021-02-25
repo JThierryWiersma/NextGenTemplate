@@ -1,0 +1,29 @@
+{
+    "name": "nextgen",
+    "displayName": "NextGenTemplate",
+    "description": "",
+    "version": "0.0.2",
+    "publisher": "Thierry-RDW",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "repository": { 
+        "url": "https://github.com/JThierryWiersma/NextGen" 
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "nextgen",
+            "aliases": ["NextGen", "nextgen"],
+            "extensions": [".tpl"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "nextgen",
+            "scopeName": "source.nextgen",
+            "path": "./syntaxes/nextgen.tmLanguage.json"
+        }]
+    }
+}
